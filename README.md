@@ -16,3 +16,6 @@ This Python script is written for Project 2 of Udacity's Programming for Data Sc
 
 *
     - bikeshare_2.py
+    - washington.csv
+    - new_york_city.csv
+    - chicago.csv
