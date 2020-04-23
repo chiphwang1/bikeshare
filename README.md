@@ -1,27 +1,18 @@
-# Version Control with Git
+# Udacity BikeShare Project
 
-This is the repo for [Udacity's Version Control with Git course](). In the course, students will learn version control while learning the basics to intermediate knowledge of Git.
-
-This repo contains the source code of a blog project that will be used throughout the course.
+This Python script is written for Project 2 of Udacity's Programming for Data Science Nanodegree and is used to explore data related to bike share systems in the United States. It imports data from csv files and computes descriptive statistics from the data. It also takes in users' raw input to create an interactive experience in the terminal to present these statistics.
 
 ## Table of Contents
 
 * [Instructions](#instructions)
-* [Creator](#creators)
+* [Files](#creators)
 
 ## Instructions
 
-* clone the project
-* open the index file in a browser
+* Run the Script - python3 bikeshare_2.py
+* Follow the prompts to obtain specified statistical information
 
-## Creators
+## Files
 
-* Richard Kalehoff
-    - [https://github.com/richardkalehoff](https://github.com/richardkalehoff)
-    - [https://twitter.com/richardkalehoff](https://twitter.com/richardkalehoff)
-
-With the help of:
-
-* Colt
-* James
-* Julia
+*
+    - bikeshare_2.py
