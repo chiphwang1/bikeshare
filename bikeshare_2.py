@@ -48,7 +48,7 @@ def get_filters():
 
 
 def load_data(city, month, day):
-    
+
 
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -59,22 +59,22 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-   
+
     df = pd.read_csv("{}.csv".format(city.replace(" ","_")))
 
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['End Time'] = pd.to_datetime(df['End Time'])
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.dayofweek
-    
+
 
 
     # filter by month if applicable
     if month != 'all':
     # use the index of the months list to get the corresponding int
        months = ['january', 'february', 'march', 'april', 'may', 'june']
-       month = months.index(month) + 1 
-    
+       month = months.index(month) + 1
+
     # filter by month to create the new dataframe
        df = df[df['month'] == month]
 
@@ -83,7 +83,7 @@ def load_data(city, month, day):
     # filter by day of week to create the new dataframe
           days = ['monday','tuesday','wednesday', 'thursday', 'friday', 'saturday', 'sunday']
           day = days.index(day) + 1
-          df = df[df['day_of_week'] == day] 
+          df = df[df['day_of_week'] == day]
     return df
 
 
@@ -92,7 +92,7 @@ def time_stats(df):
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
-    
+
     # display the most common month
 
     common_month = df['month'].mode()[0]
@@ -196,7 +196,7 @@ def user_stats(df):
     except Exception as e:
         print("No Birth year Values in Data")
 
-    
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
@@ -205,7 +205,7 @@ def show_raw_data(df):
     answer = " "
     counter = 0
     while answer != 'n':
-        answer = input("Would youy like to see the another 5 lines of raw data?  Enter y for yes or n for no: ").lower()
+        answer = input("Would you like to see the another 5 lines of raw data?  Enter y for yes or n for no: ").lower()
         if answer == "y":
             print(df.iloc[counter:counter + 5])
             counter = counter + 5
