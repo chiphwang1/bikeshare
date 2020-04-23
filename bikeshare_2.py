@@ -207,8 +207,8 @@ def show_raw_data(df):
     while answer != 'n':
         answer = input("Would you like to see the another 5 lines of raw data?  Enter y for yes or n for no: ").lower()
         if answer == "y":
-            print(df.iloc[counter:counter + 5])
-            counter = counter + 5
+            print(df.iloc[counter:counter + 10])
+            counter = counter + 10
 
 
 
