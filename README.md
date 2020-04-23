@@ -6,6 +6,8 @@ This Python script is written for Project 2 of Udacity's Programming for Data Sc
 
 * [Instructions](#instructions)
 * [Files](#creators)
+* [Summary]
+
 
 ## Instructions
 
